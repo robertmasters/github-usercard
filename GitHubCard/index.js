@@ -43,6 +43,8 @@ axios.get('https://api.github.com/users/robertmasters')
     user, and adding that card to the DOM.
 */
 
+
+
 const followersArray = [
   'https://api.github.com/users/fibonacci85',
   'https://api.github.com/users/sean-birmingham',
@@ -108,7 +110,7 @@ function githubStuff(singleObject){
 
 //assigning content to elements
   imgUser.src = singleObject.avatar_url
-  h3UserName.textContent = `user name ${singleObject.login}`
+  h3UserName.textContent = ` ${singleObject.login}`
   pUsersName.textContent = singleObject.name
   pLocation.textContent = singleObject.location
   pProfile.textContent = 'Profile: '
